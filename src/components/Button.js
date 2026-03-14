@@ -11,7 +11,7 @@ const Button = ({
   ...props
 }) => {
   const base =
-    "inline-flex w-fit cursor-pointer items-center justify-center rounded-lg px-21 py-6 transition-colors focus:outline-none";
+    "inline-flex w-fit cursor-pointer items-center justify-center rounded-lg px-21 py-6 max-[768px]:px-6 max-[768px]:py-4 transition-colors focus:outline-none";
 
   return (
     <button

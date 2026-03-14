@@ -4,7 +4,7 @@ import InputItem from "@/components/InputItem";
 const Contact = () => {
   return (
     <Wrapper>
-      <div className="radial h-150 rounded-[20px] flex flex-col w-full px-20 py-16.5 justify-between">
+      <div className="radial h-150 rounded-[20px] flex flex-col w-full px-20 py-16.5 max-[768px]:p-6 justify-between max-[768px]:h-fit gap-y-4 max-[768px]:items-center">
         <div className="flex flex-col gap-4.5">
           <h1 className="text-white">CВЯЗАТЬСЯ С НАМИ</h1>
           <div className="flex flex-col w-full max-w-122 gap-3.75 text-[15px]">

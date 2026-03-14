@@ -12,7 +12,7 @@ const InputItem = ({
   ...props
 }) => {
   const base =
-    "inline-flex items-center justify-center rounded-[10px] px-[33px] py-[24px] transition-colors focus:outline-none";
+    "inline-flex  max-[768px]:w-full items-center justify-center rounded-[10px] px-[33px] py-[24px] max-[768px]:px-6 max-[768px]:py-4 transition-colors focus:outline-none";
 
   return (
     <input

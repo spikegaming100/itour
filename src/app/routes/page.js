@@ -14,8 +14,8 @@ const Routes = () => {
   useEffect(() => {
     travelURLs.forEach((item, index) => {
       const qr = new QRCodeStyling({
-        width: 320,
-        height: 320,
+        width: 295,
+        height: 295,
         data: item.url,
         dotsOptions: {
           color: "#505050",
@@ -42,17 +42,18 @@ const Routes = () => {
 
   return (
     <Wrapper>
-      <div className="flex flex-col gap-13 w-full">
-        <div className="flex bg-white items-center rounded-[20px] w-full px-20 py-13.5 justify-between">
+      <div className="flex flex-col gap-10 w-full">
+        <div className="flex justify-between items-center w-full max-[768px]:pb-10 max-[768px]:flex-col-reverse gap-y-4 bg-white rounded-[20px] px-20 py-16.5 max-[768px]:p-6">
           <h1>МАРШРУТЫ</h1>
           <img src={mountains.src} alt="mountains" />
         </div>
 
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 gap-10 max-[768px]:grid-cols-1">
           {travelURLs.map((item, index) => (
             <div key={index}>
-              <div className="flex relative overflow-hidden flex-col items-center gap-16.5 bg-white pt-18 pb-15 px-6 rounded-t-[20px]">
+              <div className="flex relative overflow-hidden flex-col items-center gap-16.5 max-[768px]:gap-6 bg-white pt-18 pb-15 px-6 max-[768px]:p-6 rounded-t-[20px]">
                 <h2 className="uppercase">{item.title} маршрут</h2>
+
                 <div ref={(el) => (qrRefs.current[index] = el)} />
 
                 <div className="text-center text-sm">
@@ -69,7 +70,7 @@ const Routes = () => {
             </div>
           ))}
         </div>
-        <div className="radial rounded-[20px] flex flex-col w-full px-20 py-16.5 justify-between">
+        <div className="radial rounded-[20px] flex flex-col w-full px-20 py-16.5 max-[768px]:p-6 justify-between">
           <div className="flex flex-col gap-4.5">
             <h1 className="text-white">
               ЗНАЕТЕ МЕСТА О КОТОРЫХ
