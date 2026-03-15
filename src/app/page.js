@@ -7,7 +7,7 @@ export default function Home() {
     <Wrapper>
       <div className="radial h-150 rounded-[20px] flex flex-col w-full px-20 py-16.5 max-[768px]:p-6 justify-between max-[768px]:h-fit gap-y-4 max-[768px]:items-center">
         <div className="flex flex-col gap-4.5">
-          <h1 className="text-white">
+          <h1 className="text-white max-[768px]:text-center">
             НАША МИССИЯ -
             <br />
             ПРОМЫШЛЕННЫЙ ТУРИЗМ

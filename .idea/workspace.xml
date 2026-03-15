@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c5fdb93-752a-4b43-a55b-17d5d246b5be" name="Changes" comment="123">
-      <change afterPath="$PROJECT_DIR$/src/components/PageGen.js" afterDir="false" />
+    <list default="true" id="0c5fdb93-752a-4b43-a55b-17d5d246b5be" name="Changes" comment="adapt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/contact/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/db/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/db/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/mus/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/mus/page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routes/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routes/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/sci/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/sci/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/sri/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/sri/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InputItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InputItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Wrapper.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +116,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1773497841618</updated>
-      <workItem from="1773497842750" duration="22245000" />
+      <workItem from="1773497842750" duration="22578000" />
+      <workItem from="1773573034578" duration="1096000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <option name="closed" value="true" />
@@ -147,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773513735690</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adapt">
+      <option name="closed" value="true" />
+      <created>1773520364400</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1773520364400</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +151,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="123" />
-    <option name="LAST_COMMIT_MESSAGE" value="123" />
+    <MESSAGE value="adapt" />
+    <option name="LAST_COMMIT_MESSAGE" value="adapt" />
   </component>
 </project>

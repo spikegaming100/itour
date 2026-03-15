@@ -12,9 +12,9 @@ const Footer = () => {
   const pathname = usePathname();
 
   return (
-    <Wrapper className="grow-0 min-[1588px]:w-full flex max-[768px]:flex-col gap-y-6 bg-white px-20 py-16.5 max-[768px]:p-6 rounded-[20px] mb-22.5 items-center max-[768px]:items-start justify-between z-1">
-      <div className="flex flex-col gap-9 max-[768px]:w-full">
-        <div className="flex gap-9 items-center justify-center">
+    <Wrapper className="grow-0 min-[1588px]:w-full flex max-[768px]:flex-col gap-y-10 bg-white px-20 py-16.5 max-[768px]:p-6 rounded-[20px] mb-22.5 items-center max-[768px]:items-center justify-between z-1">
+      <div className="flex flex-col gap-9 max-[768px]:w-full max-[768px]:items-center">
+        <div className="flex gap-x-9 gap-y-6 items-center justify-center max-[768px]:flex-col">
           <Link href={"/"}>
             <img src={Logo.src} alt="logo" />
           </Link>
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <nav className="flex flex-col uppercase gap-3.75">
+      <nav className="flex flex-col uppercase gap-3.75 max-[768px]:items-center">
         {routes.map((route, index) => {
           const isActive = pathname === route.path;
           return (
