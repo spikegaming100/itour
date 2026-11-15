@@ -1,19 +1,16 @@
-"use client";
-
 import Wrapper from "@/components/Wrapper";
-import Logo from "@/../public/Logo.svg";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Logo from "@/assets/Logo.svg";
+import { Link, useLocation } from "react-router-dom";
 import { Fragment } from "react";
 import { routes } from "@/components/Variables";
 
 const Header = () => {
-  const pathname = usePathname();
+  const { pathname } = useLocation();
 
   return (
     <Wrapper className="py-14.25 justify-between flex items-center max-[768px]:flex-col gap-y-4 max-[768px]:pb-6">
-      <Link href={"/"}>
-        <img src={Logo.src} alt="logo" />
+      <Link to={"/"}>
+        <img src={Logo} alt="logo" />
       </Link>
       <nav className="flex items-center gap-3.25 uppercase flex-wrap max-[768px]:justify-center">
         {routes.map((route, index) => {
@@ -21,7 +18,7 @@ const Header = () => {
           return (
             <Fragment key={index}>
               <Link
-                href={route.path}
+                to={route.path}
                 className={`
                 text-[15px]
                 transition-colors 

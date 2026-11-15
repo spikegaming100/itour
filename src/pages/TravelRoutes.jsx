@@ -1,14 +1,11 @@
-"use client";
-
 import { useEffect, useRef } from "react";
 import Wrapper from "@/components/Wrapper";
-import mountains from "@/../public/icons/mountains.svg";
+import mountains from "@/assets/icons/mountains.svg";
 import QRCodeStyling from "qr-code-styling";
 import { travelURLs } from "@/components/Variables";
-import Link from "next/link";
 import Button from "@/components/Button";
 
-const Routes = () => {
+const TravelRoutes = () => {
   const qrRefs = useRef([]);
 
   useEffect(() => {
@@ -45,7 +42,7 @@ const Routes = () => {
       <div className="flex flex-col gap-10 w-full">
         <div className="flex justify-between items-center w-full max-[768px]:pb-10 max-[768px]:flex-col-reverse gap-y-4 bg-white rounded-[20px] px-20 py-16.5 max-[768px]:p-6">
           <h1>МАРШРУТЫ</h1>
-          <img src={mountains.src} alt="mountains" />
+          <img src={mountains} alt="mountains" />
         </div>
 
         <div className="grid grid-cols-2 gap-10 max-[768px]:grid-cols-1">
@@ -62,11 +59,11 @@ const Routes = () => {
                   ))}
                 </div>
               </div>
-              <Link href={item.url}>
+              <a href={item.url} target="_blank" rel="noreferrer">
                 <Button className="w-full rounded-t-none rounded-b-[20px]">
                   ОТКРЫТЬ В ЯНДЕКС КАРТАХ
                 </Button>
-              </Link>
+              </a>
             </div>
           ))}
         </div>
@@ -89,4 +86,4 @@ const Routes = () => {
   );
 };
 
-export default Routes;
+export default TravelRoutes;

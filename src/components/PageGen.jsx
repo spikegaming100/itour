@@ -1,6 +1,6 @@
 import Wrapper from "@/components/Wrapper";
 import Button from "@/components/Button";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 const PageGen = ({ section, ico, head, path }) => {
   return (
@@ -9,15 +9,15 @@ const PageGen = ({ section, ico, head, path }) => {
         <div className="flex justify-between items-center w-full pb-37.5 max-[768px]:pb-10 max-[768px]:flex-col-reverse gap-y-4">
           <h1>{head}</h1>
           <img
-            src={ico.src}
-            alt={ico.name}
+            src={ico}
+            alt="icon"
             className="shrink-0 max-[768px]:max-h-25"
           />
         </div>
         <div className="flex relative flex-col gap-62.5 max-[768px]:gap-10 z-2">
-          {path.src && (
+          {path && (
             <img
-              src={path.src}
+              src={path}
               alt="path"
               draggable="false"
               className="absolute top-0 left-0 select-none pointer-events-none z-0 max-[768px]:hidden"
@@ -41,7 +41,7 @@ const PageGen = ({ section, ico, head, path }) => {
                       {item.text}
                     </span>
                   </div>
-                  <Link href={item.url} className="w-fit max-[768px]:w-full">
+                  <Link to={item.url} className="w-fit max-[768px]:w-full">
                     <Button className="max-[768px]:w-full">
                       ПОДОБРАТЬ МАРШРУТ
                     </Button>

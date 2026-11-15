@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Tektur";
+  font-style: normal;
+  font-display: swap;
+  src: url("./assets/fonts/Tektur.ttf") format("truetype");
+}
+
+@theme {
+  --color-background: #ebebeb;
+  --color-orange: #e77023;
+  --color-orange-light: #e18c57;
+  --color-green: #047c58;
+  --color-green-light: #4eaf92;
+  --color-gray: #505050;
+  --color-radial: linear-gradient(
+    130deg,
+    #047c58 4.69%,
+    #299675 15.37%,
+    #e76b23 33.05%,
+    #f5bb9a 49.01%,
+    #e76b23 64.05%,
+    #e78723 74.66%,
+    #299575 87.1%,
+    #047c58 99.55%
+  );
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.25;
+  font-family: "Tektur", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  color: var(--color-gray);
+  background-color: var(--color-background);
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+input {
+  border: none;
+}
+
+.radial {
+  position: relative;
+  overflow: hidden;
+}
+
+.radial::before {
+  content: "";
+  background-image: var(--color-radial);
+  opacity: 0.75;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}

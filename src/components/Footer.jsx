@@ -1,32 +1,29 @@
-"use client";
-
 import Wrapper from "@/components/Wrapper";
-import Logo from "../../public/Logo.svg";
-import Rgutis from "../../public/Rgutis.png";
-import Link from "next/link";
+import Logo from "@/assets/Logo.svg";
+import Rgutis from "@/assets/Rgutis.png";
+import { Link, useLocation } from "react-router-dom";
 import { routes } from "@/components/Variables";
 import { Fragment } from "react";
-import { usePathname } from "next/navigation";
 
 const Footer = () => {
-  const pathname = usePathname();
+  const { pathname } = useLocation();
 
   return (
     <Wrapper className="grow-0 min-[1588px]:w-full flex max-[768px]:flex-col gap-y-10 bg-white px-20 py-16.5 max-[768px]:p-6 rounded-[20px] mb-22.5 items-center max-[768px]:items-center justify-between z-1">
       <div className="flex flex-col gap-9 max-[768px]:w-full max-[768px]:items-center">
         <div className="flex gap-x-9 gap-y-6 items-center justify-center max-[768px]:flex-col">
-          <Link href={"/"}>
-            <img src={Logo.src} alt="logo" />
+          <Link to={"/"}>
+            <img src={Logo} alt="logo" />
           </Link>
-          <Link href={"https://rgutis.ru"}>
-            <img src={Rgutis.src} alt="rgutis" />
-          </Link>
+          <a href="https://rgutis.ru" target="_blank" rel="noreferrer">
+            <img src={Rgutis} alt="rgutis" />
+          </a>
         </div>
         <div className="flex flex-col text-[15px] gap-3.75">
           <span>Связаться с нами:</span>
           <div className="flex flex-col">
-            <Link href="/contact">+7 (945) 888 88-88</Link>
-            <Link href="/contact">it_our@gmail.com</Link>
+            <Link to="/contact">+7 (945) 888 88-88</Link>
+            <Link to="/contact">it_our@gmail.com</Link>
           </div>
         </div>
       </div>
@@ -36,7 +33,7 @@ const Footer = () => {
           return (
             <Fragment key={index}>
               <Link
-                href={route.path}
+                to={route.path}
                 className={`
                 text-[15px]
                 transition-colors 

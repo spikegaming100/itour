@@ -1,5 +1,5 @@
-import honeycomb from "../../../public/sci/honeycomb.svg";
-import path from "../../../public/sci/path.svg";
+import honeycomb from "@/assets/sci/honeycomb.svg";
+import path from "@/assets/sci/path.svg";
 import { sections3 } from "@/components/Variables";
 import PageGen from "@/components/PageGen";
 

@@ -1,4 +1,4 @@
-import lamp from "../../../public/mus/lamp.svg";
+import lamp from "@/assets/mus/lamp.svg";
 import { sections4 } from "@/components/Variables";
 import PageGen from "@/components/PageGen";
 

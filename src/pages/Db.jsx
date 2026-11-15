@@ -1,5 +1,5 @@
-import construct from "../../../public/db/construct.svg";
-import path from "../../../public/sri/path.svg";
+import construct from "@/assets/db/construct.svg";
+import path from "@/assets/sri/path.svg";
 import { sections2 } from "@/components/Variables";
 import PageGen from "@/components/PageGen";
 

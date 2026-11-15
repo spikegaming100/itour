@@ -1,6 +1,6 @@
 import Wrapper from "@/components/Wrapper";
 import Button from "@/components/Button";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <Link href="/routes" className="w-fit">
+        <Link to="/routes" className="w-fit">
           <Button className="uppercase" variant="secondary">
             ПОДОБРАТЬ МАРШРУТ
           </Button>

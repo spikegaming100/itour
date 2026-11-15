@@ -1,5 +1,5 @@
-import science from "../../../public/sri/science.svg";
-import path from "../../../public/sri/path.svg";
+import science from "@/assets/sri/science.svg";
+import path from "@/assets/sri/path.svg";
 import { sections1 } from "@/components/Variables";
 import PageGen from "@/components/PageGen";
 

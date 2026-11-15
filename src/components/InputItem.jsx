@@ -7,7 +7,6 @@ const InputItem = ({
   className = "",
   type = "text",
   variant = "primary",
-  children,
   placeholder,
   ...props
 }) => {

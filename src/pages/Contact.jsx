@@ -1,4 +1,5 @@
 import Wrapper from "@/components/Wrapper";
+
 import InputItem from "@/components/InputItem";
 
 const Contact = () => {
