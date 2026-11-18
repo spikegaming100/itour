@@ -16,12 +16,30 @@ npm run dev
 ## Сборка
 
 ```bash
-npm run build    # сборка в dist/
+npm run build    # сборка для GitHub Pages (base /itour/) в dist/
 npm run preview  # локальный просмотр собранной версии
 npm run lint     # проверка ESLint
 ```
 
-## Деплой
+## Деплой на nginx
+
+Для размещения в корне сайта (например, `https://itour.ru/`):
+
+```bash
+npm ci
+npm run build:nginx          # сборка с base "/" в dist/
+npm run preview:nginx        # проверка собранной версии локально
+```
+
+Скопируйте содержимое `dist/` на сервер и используйте конфиг
+[`deploy/nginx.conf`](deploy/nginx.conf) (root, try_files, gzip и кэширование
+ассетов). Пример:
+
+```bash
+rsync -av --delete dist/ user@server:/var/www/itour/
+```
+
+## Деплой на GitHub Pages
 
 Пуш в ветку `master` запускает GitHub Actions workflow `.github/workflows/deploy.yml`,
 который собирает проект и публикует папку `dist` на GitHub Pages
