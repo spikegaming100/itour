@@ -17,6 +17,10 @@
 /dist
 /build
 
+# deployment archives
+/*.tar.gz
+/*.zip
+
 # misc
 .DS_Store
 *.pem
